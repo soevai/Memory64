@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Memory64/Bin32.py
+Memory64/D3Gui.py
+Memory64/Function.py
+Memory64/Memo.py
+Memory64/ModLib.py
+Memory64/Struct.py
+Memory64/__init__.py
+Memory64.egg-info/PKG-INFO
+Memory64.egg-info/SOURCES.txt
+Memory64.egg-info/dependency_links.txt
+Memory64.egg-info/top_level.txt
+Memory64/Libs/Bin32.dll
+Memory64/const/__init__.py
