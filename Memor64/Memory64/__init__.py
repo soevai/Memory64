@@ -1,10 +1,12 @@
-''' Update time > 2022/2/13 '''
+''' Update time > 2022/11/15 '''
+
+import platform, os
+
+if platform.architecture()[0] != "32bit":
+    print("模块不兼容64位Python")
+    os._exit(0)
 
 from .Memo import SetupProce
-from .Bin32 import (
-    Protect, ZwOpenProcess, IsWinx64,
-    GetModuleAddr64
-)
 from .Function import (
     GetWindRect, SetkeyBoHook, ShowWindowAsync,
     MonitorHotkeys, FindWindowPid, FindProcessPid,
@@ -28,4 +30,4 @@ print(Thumb("%s"))
 
 '''.strip()
 
-version = 'Memory64 ver: 1.0.2'
+version = 'Memory64 ver: 1.0.3'

@@ -98,6 +98,6 @@ class ExecDraw():
         left, top, right, bottom = GetWindRect(self.firstHwnd)
         Width, Height = right - left, bottom - top
         if not any([left, top, right, bottom]):
-            sys.exit('进程不存在 已经安全退出')
+            sys.exit('进程不存在，已安全退出！')
         init_Library.setWindowPos(self.hwnd, -1, left, top, Width, Height , 1)
         pygame.display.update()
