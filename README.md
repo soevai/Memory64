@@ -106,7 +106,7 @@ bytesa = "11 33 30 32 32 33 35 40 40 58"
 WriteMemory64Bytes(hwnd, 0x7FF77E2BE72E,bytesa, 10)   # 写64位内存字节集
 ```
 
-## 透明GUI绘制
+## 绘制透明GUI
 
 ```python
 from Memory64 import FindWindowPid
