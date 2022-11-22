@@ -45,7 +45,7 @@ Memory64.Function.UpdateWindow()    # 更新窗口
 Memory64.Function.WindPending()     # 窗口挂起
 
 
-import Memory64.Bin32               # 导入 Memory64.Function 模块
+import Memory64.Bin32               # 导入 Memory64.Bin32 模块
 
 Memory64.Bin32.Openhwnd()           # 打开进程句柄
 Memory64.Bin32.GetProcPid()         # 获取进程PID
@@ -70,14 +70,6 @@ Memory64.D3Gui.startLoop()          # 启动绘制段
 Memory64.D3Gui.endLoop()            # 结束绘制段
 ```
 
-| 版本       | 说明                                              | 检查 |
-| ---------- | ------------------------------------------------- | ---- |
-| 1.0.3.dev2 | 修复Bin32.dll调用报错问题 增加64位进程读写 :wave:             | √    |
-| 1.0.2.dev2 | 修复Bin32.dll 调用路径错误问题 :wave:             | √    |
-| 1.0.1.dev2 | 修复D3Gui 绘制报错问题 更新目录结构 语法等 :wave: | √    |
-| 1.0.0.dev2 | 第一版 全是BUG 滑稽 :ear_of_rice:                 | √    |
-
----
 
 
 ## 获取64位程序模块基址
@@ -128,5 +120,16 @@ while True:
     draw.drawRect(100,100,100,100,5,(255,254,0)) # 绘制矩形
     draw.endLoop()                               # 结束绘制段
 ```
+
+
+
+| 版本       | 说明                                              | 检查 |
+| ---------- | ------------------------------------------------- | ---- |
+| 1.0.3.dev2 | 修复Bin32.dll调用报错问题 增加64位进程读写 :wave:             | √    |
+| 1.0.2.dev2 | 修复Bin32.dll 调用路径错误问题 :wave:             | √    |
+| 1.0.1.dev2 | 修复D3Gui 绘制报错问题 更新目录结构 语法等 :wave: | √    |
+| 1.0.0.dev2 | 第一版 全是BUG 滑稽 :ear_of_rice:                 | √    |
+
+---
 
 ![](https://raw.githubusercontent.com/2872930558/Memory64/063ca2f162dabc9d713bb93d6abc3c838a3d7479/python.svg)
