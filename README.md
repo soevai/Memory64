@@ -72,7 +72,7 @@ Memory64.D3Gui.endLoop()            # 结束绘制段
 
 
 
-## 获取64位程序模块基址
+## 获取64位模块基址
 
 ```python
 from Memory64.Bin32 import *
