@@ -117,7 +117,7 @@ draw = Memory64.D3Gui.ExecDraw(hwnd)            # 初始化模块
 
 while True:
     draw.startLoop()                             # 开始绘制段
-    draw.drawRect(100,100,100,100,5,(255,254,0)) # 绘制矩形
+    draw.drawRect(100,100,100,100,5,(255,254,0)) # 绘制矩形框
     draw.endLoop()                               # 结束绘制段
 ```
 
