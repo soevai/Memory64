@@ -117,7 +117,7 @@ mod  = GetModuleAddr64(hwnd, "shlwapi.dll")
 
 # 读内存
 addr  = ReadMemory64Int(hwnd, 0x7FF8E64CEC48)       # 直接读地址
-addr2 = ReadMemory64Int(hwnd, mod + 0x4EC48)          # 模块 + 偏移
+addr2 = ReadMemory64Int(hwnd, mod + 0x4EC48)        # 模块 + 偏移
 print(addr, addr2)
 
 # 写内存
@@ -149,7 +149,7 @@ draw = Memory64.D3Gui.ExecDraw(hwnd)            # 初始化绘制
 while True:
     draw.startLoop()
     draw.drawRect(100, 100, 100, 100, 5, (255, 254, 0))  # 黄色矩形框
-    draw.drawText(110, 110, "ESP", (0, 255, 0))            # 绿色文本
+    draw.drawText(110, 110, "ESP", (0, 255, 0))          # 绿色文本
     draw.endLoop()
 ```
 
